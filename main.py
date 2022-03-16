@@ -62,9 +62,9 @@ def main(help, top, auto_commit, gtk, mail_smtp, mail_user, mail_pass, qq_user, 
 
         if all_cves:
             page.to_page(top)
-            mail.to_mail(gtk, all_cves, mail_smtp, mail_user, mail_pass)
-            qq.to_group(all_cves, qq_user, qq_pass)
-            wechat.to_wechat(all_cves)
+            #mail.to_mail(gtk, all_cves, mail_smtp, mail_user, mail_pass)
+            #qq.to_group(all_cves, qq_user, qq_pass)
+            #wechat.to_wechat(all_cves)
 
             if auto_commit:
                 git.auto_commit()
